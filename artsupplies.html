@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stelzer - Lab 5 - Art Supplies</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link  rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"})
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/Banner.jpg" alt="Art Supplies Banner">
+        <h1>Art Supplies & Mediums</h1>
+        <h2>The Basis of Art</h2>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favartmediums.html">Favorite Art Mediums</a></li>
+            <li><a href="artsupplies.html" class="current">Art Supplies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <table>
+            <caption>Art Supplies and their Mediums</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Art Supply</th>
+                    <th scope="col">Art Medium(s)</th>
+                    <th scope="col">Medium Category</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Sand</td>
+                    <td>Sand Sculpture</td>
+                    <td>Sculpture</td>
+                </tr>
+                <tr>
+                    <td>Paintbrushes</td>
+                    <td>Acrylic, Watercolor, Gouache, Oil</td>
+                    <td>Painting</td>
+                </tr>
+                <tr>
+                    <td>Wire</td>
+                    <td>Metal Sculpture</td>
+                    <td>Sculpture</td>
+                </tr>
+                <tr>
+                    <td>Engraving Tools</td>
+                    <td>Engraving</td>
+                    <td>Printing</td>
+                </tr>
+                <tr>
+                    <td>Air Dry Clay</td>
+                    <td>2D and 3D Sculpture</td>
+                    <td>Sculpture</td>
+                </tr>
+                <tr>
+                    <td>Kneaded Eraser</td>
+                    <td>Graphite Pencils</td>
+                    <td>Drawing</td>
+                </tr>
+                <tr>
+                    <td>Canvases</td>
+                    <td>Acrylic Paint, Oil Paint</td>
+                    <td>Painting</td>
+                </tr>
+                <tr>
+                    <td>Workable Fixative</td>
+                    <td>Graphite Pencils</td>
+                    <td>Drawing</td>
+                </tr>
+                <tr>
+                    <td>Heat Gun</td>
+                    <td>Screen Printing</td>
+                    <td>Printing</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <aside>
+            <ul>
+                <li><a href="https://courses.lumenlearning.com/atd-sac-artappreciation/chapter/reading-painting/">Painting</a></li>
+                <li><a href="https://courses.lumenlearning.com/atd-sac-artappreciation/chapter/oer-1-21/">Drawing</a></li>
+                <li><a href="https://creativemarket.com/blog/printing-101-understanding-the-different-mediums">Printing</a></li>
+                <li><a href="https://www.ehow.com/list_6686843_different-mediums-sculpture.html">Sculpture</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2021 Sydney Stelzer</p>
+    </footer>
+
+</body>
+</html>

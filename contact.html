@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stelzer - Lab 5 - Contact</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link  rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"})
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/Banner.jpg" alt="Art Supplies Banner">
+        <h1>Art Supplies & Mediums</h1>
+        <h2>The Basis of Art</h2>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favartmediums.html">Favorite Art Mediums</a></li>
+            <li><a href="artsupplies.html">Art Supplies</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Email Sydney</h2>
+            <form action="confirm.html" method="get" name="contact_form" id="contact_form">
+                  <fieldset>
+                      <legend>Please enter the following information:</legend>
+                      <label for="first_name">First Name:</label>
+                      <input type="text" name="first_name" id="first_name" autofocus required><br>
+                      <label for="last_name">Last Name:</label>
+                      <input type="text" name="last_name" id="last_name" required><br>
+                      <label for="email">Email:</label>
+                      <input type="email" name="email" id="email" required><br>
+                      <label for="phone">Phone Number:</label>
+                      <input type="tel" name="phone" id="phone" placeholder="Please include your 10 digit phone number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999 format"><br>
+                  </fieldset>
+                  <fieldset id="buttons">
+                      <input type="submit" id="submit" value="Submit Email">
+                  </fieldset>
+            </form>
+
+        </section>
+        <aside>
+            <ul>
+                <li><a href="https://courses.lumenlearning.com/atd-sac-artappreciation/chapter/reading-painting/">Painting</a></li>
+                <li><a href="https://courses.lumenlearning.com/atd-sac-artappreciation/chapter/oer-1-21/">Drawing</a></li>
+                <li><a href="https://creativemarket.com/blog/printing-101-understanding-the-different-mediums">Printing</a></li>
+                <li><a href="https://www.ehow.com/list_6686843_different-mediums-sculpture.html">Sculpture</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2021 Sydney Stelzer</p>
+    </footer>
+
+</body>
+</html>
